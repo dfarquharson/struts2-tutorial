@@ -3,10 +3,14 @@
     "-//Apache Sofware Foundation//DTD Struts Configuration 2.5//EN"
     "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-    <constant name="struts.devMode" value="true" />
-    <package name="basicstruts2" extends="struts-default">
+    <constant name="struts.devMode" value="true"/>
+    <package name="basic-struts2" extends="struts-default">
         <action name="index">
             <result>/index.jsp</result>
+        </action>
+        
+        <action name="hello" class="com.dsjf.basicstruts.controller.HelloWorldAction" method="execute">
+            <result name="success">/HelloWorld.jsp</result>
         </action>
     </package>
 </struts>

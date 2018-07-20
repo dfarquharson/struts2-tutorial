@@ -31,6 +31,8 @@
         </dependency>
     </dependencies>
 
+    <packaging>war</packaging>
+
     <build>
         <finalName>basic-struts</finalName>
         <plugins>
